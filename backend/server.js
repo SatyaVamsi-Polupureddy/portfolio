@@ -58,8 +58,21 @@ connectDB();
 // Routes
 // app.use('/api/skills', skillsRoutes);
 app.get('/', (req, res) => {
-  res.send("Vamsi's portfolio backend running!");
+  res.json({ 
+    message: "Vamsi's portfolio backend running!",
+    status: "healthy",
+    timestamp: new Date().toISOString()
+  });
 });
+
+app.get('/api/health', (req, res) => {
+  res.json({ 
+    message: "API is healthy",
+    status: "ok",
+    timestamp: new Date().toISOString()
+  });
+});
+
 app.use('/api/projects', projectsRoutes);
 app.use('/api/achievements', achievementsRoutes);
 app.use('/api/experiences', experiencesRoutes);
