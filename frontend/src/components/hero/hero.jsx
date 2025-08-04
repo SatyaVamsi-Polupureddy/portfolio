@@ -3,7 +3,7 @@ import "./hero.css";
 import { TbDownload } from "react-icons/tb";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import heroBg from "../../assets/images/hero-bg.png";
+import heroBg from "/hero-bg.png";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
