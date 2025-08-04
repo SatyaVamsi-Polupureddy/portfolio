@@ -13,7 +13,7 @@ const getApiUrl = () => {
     return devUrl;
   }
   // In production, use environment variable or fallback to your Vercel backend URL
-  const prodUrl = import.meta.env.VITE_BACKEND_URL || "https://vamsi-portfolio-backend.vercel.app/api";
+  const prodUrl = import.meta.env.VITE_BACKEND_URL || "https://portfolio-roan-sigma-17.vercel.app/api";
   console.log('Using production URL:', prodUrl);
   return prodUrl;
 };

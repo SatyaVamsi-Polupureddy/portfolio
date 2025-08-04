@@ -22,7 +22,10 @@ const allowedOrigins = [
   'https://vamsi-portfolio-git-develop.vercel.app',
   // Add any other domains you might use
   'https://vamsi-portfolio-frontend.vercel.app',
-  'https://vamsi-portfolio-backend.vercel.app'
+  'https://vamsi-portfolio-backend.vercel.app',
+  // Add your new frontend domain
+  'https://portfolio-psv.vercel.app',
+  'https://portfolio-roan-sigma-17.vercel.app'
 ];
 
 const corsOptions = {

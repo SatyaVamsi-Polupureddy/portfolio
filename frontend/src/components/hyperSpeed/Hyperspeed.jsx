@@ -382,11 +382,12 @@ const Hyperspeed = ({
           antialias: false,
           alpha: true,
         });
-        this.renderer.setSize(
-          container.offsetWidth,
-          container.offsetHeight,
-          false
-        );
+
+        // Ensure container has valid dimensions
+        const width = Math.max(container.offsetWidth, 1);
+        const height = Math.max(container.offsetHeight, 1);
+
+        this.renderer.setSize(width, height, false);
         this.renderer.setPixelRatio(window.devicePixelRatio);
         this.composer = new EffectComposer(this.renderer);
         container.append(this.renderer.domElement);
@@ -450,8 +451,8 @@ const Hyperspeed = ({
       }
 
       onWindowResize() {
-        const width = this.container.offsetWidth;
-        const height = this.container.offsetHeight;
+        const width = Math.max(this.container.offsetWidth, 1);
+        const height = Math.max(this.container.offsetHeight, 1);
 
         this.renderer.setSize(width, height);
         this.camera.aspect = width / height;
