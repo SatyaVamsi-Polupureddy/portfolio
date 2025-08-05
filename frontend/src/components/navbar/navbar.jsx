@@ -45,6 +45,7 @@ const Navbar = () => {
     setTimeout(() => {
       const element = document.getElementById(section);
       if (element) {
+        // Use scrollIntoView with proper positioning
         element.scrollIntoView({
           behavior: "smooth",
           block: "start",
@@ -67,11 +68,7 @@ const Navbar = () => {
       <div className="nav-content">
         <div className="logo">
           <a href={`#intro`}>
-            <img
-              src="/logo.png"
-              alt="Portfolio Logo"
-              className="logo-image"
-            />
+            <img src="/logo.png" alt="Portfolio Logo" className="logo-image" />
           </a>
         </div>
 
