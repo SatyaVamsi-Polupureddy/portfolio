@@ -25,6 +25,7 @@ const allowedOrigins = [
   'https://vamsi-portfolio-backend.vercel.app',
   // Add your new frontend domain
   'https://portfolio-psv.vercel.app',
+  'https://portfolio-psvamsi.vercel.app',
   'https://portfolio-roan-sigma-17.vercel.app'
 ];
 

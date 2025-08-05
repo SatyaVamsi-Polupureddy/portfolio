@@ -6,6 +6,7 @@
 
 - Updated `backend/server.js` to include your new domains:
   - `https://portfolio-psv.vercel.app`
+  - `https://portfolio-psvamsi.vercel.app`
   - `https://portfolio-roan-sigma-17.vercel.app`
 
 ### 2. API URL Configuration ✅
@@ -65,9 +66,12 @@ VITE_BACKEND_URL=https://portfolio-roan-sigma-17.vercel.app/api
 
 ### If CORS errors persist:
 
-1. Check that both domains are in the `allowedOrigins` array
+1. Check that both domains are in the `allowedOrigins` array:
+   - Frontend domain: `https://portfolio-psvamsi.vercel.app`
+   - Backend domain: `https://portfolio-roan-sigma-17.vercel.app`
 2. Verify the backend is deployed and accessible
 3. Check browser console for specific error messages
+4. **Current fix**: Added `https://portfolio-psvamsi.vercel.app` to the CORS allowed origins
 
 ### If WebGL errors persist:
 
