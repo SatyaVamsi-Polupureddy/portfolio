@@ -13,11 +13,14 @@ import {
 } from "react-icons/fa";
 import {
   SiJavascript,
+  SiThreedotjs,
   SiTypescript,
   SiMongodb,
   SiExpress,
   SiTailwindcss,
+  SiReact,
   SiRedux,
+  SiGreensock,
   SiNextdotjs,
   SiPostman,
 } from "react-icons/si";
@@ -37,6 +40,10 @@ const skillsData = [
       // { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
       { name: "Bootstrap", icon: FaBootstrap, color: "#7952B3" },
+      { name: "Three.js", icon: SiThreedotjs, color: "#000000" },
+      { name: "React Three Fiber", icon: SiReact, color: "#61DAFB" },
+      { name: "GSAP", icon: SiGreensock, color: "#88CE02" },
+
       // { name: "Sass", icon: FaSass, color: "#CC6699" },
     ],
   },
