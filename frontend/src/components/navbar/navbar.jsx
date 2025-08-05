@@ -68,7 +68,11 @@ const Navbar = () => {
       <div className="nav-content">
         <div className="logo">
           <a href={`#intro`}>
-            <img src="/logo.png" alt="Portfolio Logo" className="logo-image" />
+            <img
+              src="https://res.cloudinary.com/dn56a5z5d/image/upload/v1754377837/logo_a3r0wa.png"
+              alt="Portfolio Logo"
+              className="logo-image"
+            />
           </a>
         </div>
 

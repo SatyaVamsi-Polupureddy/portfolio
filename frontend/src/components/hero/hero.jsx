@@ -114,7 +114,11 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-image">
-      <img src="/hero-bg.png" alt="Hero Background" className="bg"/>
+        <img
+          src="https://res.cloudinary.com/dn56a5z5d/image/upload/v1754377839/hero-bg_inpmhp.png"
+          alt="Hero Background"
+          className="bg"
+        />
 
         {/* <img src={heroBg} alt="Background"  /> */}
       </div>
